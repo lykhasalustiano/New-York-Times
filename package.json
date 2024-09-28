@@ -2,7 +2,7 @@
   "name": "nytimes",
   "version": "1.0.0",
   "scripts": {
-    "build": "parcel build src/index.html",
+    "build": "parcel build --public-url https://lykhasalustiano.github.com/New-York-Times.github.io src/index.html && rm -rf docs && mv dist docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel serve src/index.html"
   },
